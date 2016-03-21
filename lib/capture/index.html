@@ -1,15 +1,32 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1>Capture</h1>
 
-    <video id="video" width="640" height="480" autoplay></video>
-    <button id="snap">Snap Photo</button>
-    <canvas id="canvas" width="640" height="480"></canvas>
-    
+    <div class="container">
+      <div class="videoContainer">
+        <video class="video" id="video" width="640" height="480" autoplay></video>
+      </div>
+      <div class="recordContainer">
+        <button class="record" id="snap" aria-label="Snap photo"></button>
+      </div>
+      <div class="photosContainer">
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+      </div>
+    </div>
+
     <script>require('./index')</script>
   </body>
 </html>

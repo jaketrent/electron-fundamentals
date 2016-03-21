@@ -1,3 +1,54 @@
 body {
-  background: lightblue;
+  background: #ababab;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.videoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+
+}
+.recordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.record {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(0deg, rgb(171, 25, 21), rgb(252, 98, 88));
+  border-radius: 50%;
+  border: 5px solid #efefef;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
+.record:hover {
+  background: linear-gradient(0deg, rgb(215, 121, 43), rgb(215, 48, 43), rgb(252, 123, 88));
+  border: 5px solid white;
+}
+.photosContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  height: 150px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.photo {
+  flex: none;
+  height: 100px;
+  width: 150px;
+  margin-right: 15px;
+  background: linear-gradient(45deg, rgb(92, 92, 92), rgb(148, 148, 148));
+  border: 5px solid #efefef;
+  box-shadow: 2px 2px 4px solid rgba(0, 0, 0, .3);
 }
