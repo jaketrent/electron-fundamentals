@@ -2,8 +2,9 @@
   "name": "electron-photobombth",
   "version": "1.0.0",
   "description": "Desktop photo app",
-  "main": "src/index.js",
+  "main": "lib/main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jaketrent",
