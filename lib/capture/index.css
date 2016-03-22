@@ -9,11 +9,19 @@ body {
 .videoContainer {
   flex: 1;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
 .video {
-
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.canvas {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 .recordContainer {
   display: flex;
@@ -45,7 +53,7 @@ body {
 }
 .photo {
   flex: none;
-  height: 100px;
+  height: 84px;
   width: 150px;
   margin-right: 15px;
   background: linear-gradient(45deg, rgb(92, 92, 92), rgb(148, 148, 148));
