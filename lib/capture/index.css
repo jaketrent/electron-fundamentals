@@ -1,5 +1,6 @@
 body {
   background: #ababab;
+  font-family: sans-serif;
 }
 .container {
   display: flex;
@@ -59,4 +60,21 @@ body {
   background: linear-gradient(45deg, rgb(92, 92, 92), rgb(148, 148, 148));
   border: 5px solid #efefef;
   box-shadow: 2px 2px 4px solid rgba(0, 0, 0, .3);
+}
+.counterContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.counter {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, .6);
+  font-size: 125px;
+  font-weight: bold;
 }
