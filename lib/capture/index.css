@@ -54,12 +54,46 @@ body {
 }
 .photo {
   flex: none;
+  position: relative;
   height: 84px;
   width: 150px;
   margin-right: 15px;
   background: linear-gradient(45deg, rgb(92, 92, 92), rgb(148, 148, 148));
   border: 5px solid #efefef;
   box-shadow: 2px 2px 4px solid rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+.photoImg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.photoClose {
+  display: none;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+}
+.photoClose:after {
+  display: block;
+  content: "\00D7";
+  font-size: 20px;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  text-align: center;
+}
+.photo:hover {
+  border: 5px solid rgba(31, 221, 209, 0.6);
+}
+.photo:hover .photoClose {
+  display: block;
+}
+.photoClose:hover:after {
+  color: rgb(227, 128, 128);
 }
 .counterContainer {
   position: fixed;
