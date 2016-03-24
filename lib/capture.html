@@ -6,20 +6,29 @@
   <body>
 
     <div class="container">
+
       <div class="videoContainer">
-        <canvas class="canvas" id="canvas" width="853" height="480"></canvas>
         <video class="video" id="video" width="853" height="480" autoplay></video>
+        <canvas class="canvas" id="canvas" width="853" height="480"></canvas>
       </div>
+
       <div class="recordContainer">
         <button class="record" id="record" aria-label="Snap photo"></button>
       </div>
+
       <div id="photos" class="photosContainer"></div>
+
     </div>
 
     <div class="counterContainer">
       <div class="counter" id="counter"></div>
     </div>
 
+    <script src="./vendor/seriously/seriously.js"></script>
+    <script src="./vendor/seriously/effects/seriously.ascii.js"></script>
+    <script src="./vendor/seriously/effects/seriously.nightvision.js"></script>
+    <script src="./vendor/seriously/effects/seriously.scanlines.js"></script>
+    <script src="./vendor/seriously/effects/seriously.vignette.js"></script>
     <script>require('./capture')</script>
   </body>
 </html>
