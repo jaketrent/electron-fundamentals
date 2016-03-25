@@ -1,5 +1,6 @@
 {
   "name": "electron-photobombth",
+  "productName": "Photobombth",
   "version": "1.0.0",
   "description": "Desktop photo app",
   "main": "lib/main.js",
