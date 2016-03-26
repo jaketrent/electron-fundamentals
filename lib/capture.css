@@ -49,6 +49,9 @@ body {
   background: linear-gradient(0deg, rgb(215, 121, 43), rgb(215, 48, 43), rgb(252, 123, 88));
   border: 5px solid white;
 }
+.record[disabled] {
+  background: linear-gradient(0deg, rgb(51, 51, 51), rgb(135, 114, 114));
+}
 .photosContainer {
   display: flex;
   align-items: center;
