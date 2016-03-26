@@ -118,3 +118,19 @@ body {
   font-size: 125px;
   font-weight: bold;
 }
+.flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+@keyframes flashing {
+  0% { background: rgba(255, 255, 255, 1); }
+  100% { background: rgba(255, 255, 255, 0); }
+}
+.is-flashing {
+  animation: 2s ease-out 0s 1 flashing;
+}
