@@ -40,6 +40,21 @@ module.exports = mainWindow => {
           click: _ => mainWindow.webContents.send('effect-choose', 'ascii')
         },
         {
+          label: 'Daltonize',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'daltonize')
+        },
+        {
+          label: 'Filmgrain',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'filmgrain')
+        },
+        {
+          label: 'kaleidoscope',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'kaleidoscope')
+        },
+        {
           label: 'Night Vision',
           type: 'radio',
           click: _ => mainWindow.webContents.send('effect-choose', 'nightvision')
@@ -48,6 +63,11 @@ module.exports = mainWindow => {
           label: 'Scan Lines',
           type: 'radio',
           click: _ => mainWindow.webContents.send('effect-choose', 'scanlines')
+        },
+        {
+          label: 'Vibrance',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'vibrance')
         },
         {
           label: 'Vignette',

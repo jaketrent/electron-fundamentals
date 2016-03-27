@@ -14,13 +14,13 @@ let mainWindow = null
 app.on('ready', _ => {
   mainWindow = new BrowserWindow({
     height: 725,
-    width: 893, // 1400
+    width: 1400, // 893,
     resizable: false
   })
 
   mainWindow.loadURL(`file://${__dirname}/capture.html`)
 
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   images.mkdir(images.getDirPath(app))
 
