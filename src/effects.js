@@ -47,6 +47,9 @@ const effects = {
   },
   ripple: (seriously, src, target) => {
     const ripple = seriously.effect('ripple')
+    ripple.distortion = 1
+    ripple.wave = Math.PI / 0.75
+    ripple.center = [0.25, 0.25]
     connectEffect(seriously, src, target, ripple)
   },
   scanlines: (seriously, src, target) => {
