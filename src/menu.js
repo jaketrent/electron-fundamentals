@@ -50,9 +50,19 @@ module.exports = mainWindow => {
           click: _ => mainWindow.webContents.send('effect-choose', 'filmgrain')
         },
         {
+          label: 'Hex',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'hex')
+        },
+        {
           label: 'kaleidoscope',
           type: 'radio',
           click: _ => mainWindow.webContents.send('effect-choose', 'kaleidoscope')
+        },
+        {
+          label: 'Mirror',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'mirror')
         },
         {
           label: 'Night Vision',
@@ -60,9 +70,29 @@ module.exports = mainWindow => {
           click: _ => mainWindow.webContents.send('effect-choose', 'nightvision')
         },
         {
+          label: 'Pixelate',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'pixelate')
+        },
+        {
+          label: 'Ripple',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'ripple')
+        },
+        {
           label: 'Scan Lines',
           type: 'radio',
           click: _ => mainWindow.webContents.send('effect-choose', 'scanlines')
+        },
+        {
+          label: 'Sketch',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'sketch')
+        },
+        {
+          label: 'Temperature',
+          type: 'radio',
+          click: _ => mainWindow.webContents.send('effect-choose', 'temperature')
         },
         {
           label: 'Vibrance',

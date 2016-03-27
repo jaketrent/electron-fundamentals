@@ -14,7 +14,6 @@ const effects = {
     connectEffect(seriously, src, target, ascii)
   },
   daltonize: (seriously, src, target) => {
-    console.log('daltonize!')
     const daltonize = seriously.effect('daltonize')
     daltonize.type = '0.8'
     connectEffect(seriously, src, target, daltonize)
@@ -24,14 +23,31 @@ const effects = {
     filmgrain.amount = 0.15
     connectEffect(seriously, src, target, filmgrain)
   },
+  hex: (seriously, src, target) => {
+    const hex = seriously.effect('hex')
+    hex.size = 0.03
+    connectEffect(seriously, src, target, hex)
+  },
   kaleidoscope: (seriously, src, target) => {
     const kaleidoscope = seriously.effect('kaleidoscope')
     kaleidoscope.segments = 5
     connectEffect(seriously, src, target, kaleidoscope)
   },
+  mirror: (seriously, src, target) => {
+    const mirror = seriously.effect('mirror')
+    connectEffect(seriously, src, target, mirror)
+  },
   nightvision: (seriously, src, target) => {
     const nightvision = seriously.effect('nightvision')
     connectEffect(seriously, src, target, nightvision)
+  },
+  pixelate: (seriously, src, target) => {
+    const pixelate = seriously.effect('pixelate')
+    connectEffect(seriously, src, target, pixelate)
+  },
+  ripple: (seriously, src, target) => {
+    const ripple = seriously.effect('ripple')
+    connectEffect(seriously, src, target, ripple)
   },
   scanlines: (seriously, src, target) => {
     const scanlines = seriously.effect('scanlines')
@@ -39,6 +55,10 @@ const effects = {
     scanlines.size = 0.2
     scanlines.intensity = 0.8
     connectEffect(seriously, src, target, scanlines)
+  },
+  sketch: (seriously, src, target) => {
+    const sketch = seriously.effect('sketch')
+    connectEffect(seriously, src, target, sketch)
   },
   vibrance: (seriously, src, target) => {
     const vibrance = seriously.effect('vibrance')
