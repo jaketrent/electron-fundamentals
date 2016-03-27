@@ -90,11 +90,6 @@ module.exports = mainWindow => {
           click: _ => mainWindow.webContents.send('effect-choose', 'sketch')
         },
         {
-          label: 'Temperature',
-          type: 'radio',
-          click: _ => mainWindow.webContents.send('effect-choose', 'temperature')
-        },
-        {
           label: 'Vibrance',
           type: 'radio',
           click: _ => mainWindow.webContents.send('effect-choose', 'vibrance')
