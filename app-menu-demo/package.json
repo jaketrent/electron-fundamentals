@@ -1,5 +1,6 @@
 {
   "name": "app-menu-demo",
+  "productName": "Menu Test",
   "version": "1.0.0",
   "description": "Demo to experiment with Electron app menu api",
   "main": "src/main.js",
