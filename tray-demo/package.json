@@ -1,0 +1,15 @@
+{
+  "name": "tray-demo",
+  "productName": "Tray Demo",
+  "version": "1.0.0",
+  "description": "Demo app for experimenting with Electron Tray API",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "jaketrent",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^1.0.0"
+  }
+}
