@@ -1,0 +1,15 @@
+{
+  "name": "clipboard-demo",
+  "version": "1.0.0",
+  "description": "Demo for experimenting with the Electron Clipboard API",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "MIT"
+}
