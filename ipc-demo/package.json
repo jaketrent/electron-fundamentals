@@ -1,0 +1,16 @@
+{
+  "name": "ipc-demo",
+  "version": "1.0.0",
+  "description": "Demo for testing electron ipc processes",
+  "main": "src/main.js",
+  "private": true,
+  "devDependencies": {
+    "electron-prebuilt": "^1.1.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "MIT"
+}
