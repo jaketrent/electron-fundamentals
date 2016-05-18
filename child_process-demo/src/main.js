@@ -1,7 +1,20 @@
 const electron = require('electron')
 
-const app = electron.app
+const { app, BrowserWindow } = electron
+
+let mainWindow
 
 app.on('ready', _ => {
-  console.log('ready')
+  mainWindow = new BrowserWindow({
+    width: 900,
+    height: 200
+  })
+
+  mainWindow.loadURL(`file://${__dirname}/status.html`)
+
+  mainWindow.openDevTools()
+
+  mainWindow.on('close', _ => {
+    mainWindow = null
+  })
 })
