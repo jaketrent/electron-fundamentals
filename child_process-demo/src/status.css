@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background: #b8d9e9;
+}
+body {
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 0;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.input {
+  flex: 1;
+  height: 36px;
+  border: 1px solid #ababab;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.status {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.unknown {
+  background: gray;
+}
+.clean {
+  background: green;
+}
+.dirty {
+  background: red;
+}
