@@ -11,6 +11,6 @@
   "author": "jaketrent",
   "license": "MIT",
   "devDependencies": {
-    "electron-prebuilt": "^1.0.0"
+    "electron-prebuilt": "^1.1.0"
   }
 }

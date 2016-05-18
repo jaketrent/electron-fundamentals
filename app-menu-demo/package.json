@@ -6,7 +6,7 @@
   "main": "src/main.js",
   "dependencies": {},
   "devDependencies": {
-    "electron-prebuilt": "^1.0.0"
+    "electron-prebuilt": "^1.1.0"
   },
   "scripts": {
     "start": "electron ."
