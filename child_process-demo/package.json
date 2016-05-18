@@ -1,0 +1,15 @@
+{
+  "name": "child_process-demo",
+  "version": "1.0.0",
+  "description": "Demo for experimenting with electron access to child_process",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^1.1.0"
+  }
+}
