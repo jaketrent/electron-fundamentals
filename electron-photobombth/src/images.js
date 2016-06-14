@@ -11,10 +11,10 @@ exports.getDirPath = app => path.join(app.getPath('pictures'), 'photobombth')
 
 exports.mkdir = picturesPath => {
   fs.stat(picturesPath, (err, stats) => {
-    if (err) return logErr(err)
-
-    if (!stats.isDirectory())
-      fs.mkdir(picturesPath, logErr)
+    if (err && err.code !== 'ENOENT')
+      return logError(err)
+    else if (err || !stats.isDirectory())
+      fs.mkdir(picturesPath, logError)
   })
 }
 
